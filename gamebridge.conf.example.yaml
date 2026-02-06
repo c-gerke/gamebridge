@@ -1,0 +1,105 @@
+---
+# Gamebridge Configuration
+# Copy this file and customize for your network environment.
+# Save as .yaml or .yml and pass to install.sh with -c/--config.
+
+# Management interface - for SSH/admin access (not bridged)
+management:
+  interface: ens192
+  address: 10.10.10.12
+  netmask: 255.255.255.0
+  gateway: 10.10.10.1
+
+# Trunk interface - connected to switch port with all VLANs tagged
+trunk_interface: ens224
+
+# Bridge interface name
+bridge: br0
+
+# VLAN IDs to bridge together
+vlans:
+  - 10
+  - 11
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - 134
+
+# UDP port ranges for game server discovery broadcasts.
+# Format: "start:end" for ranges, or "port:port" for single ports.
+game_ports:
+  - "1301:1312"
+  - "1716:1727"
+  - "2234:2245"
+  - "2301:2312"
+  - "2350:2360"
+  - "3074:3074"
+  - "3454:3465"
+  - "3657:3668"
+  - "4242:4242"
+  - "4321:4321"
+  - "5001:5001"
+  - "5120:5131"
+  - "6112:6112"
+  - "7140:7140"
+  - "7776:7788"
+  - "8086:8088"
+  - "10480:10491"
+  - "10777:10777"
+  - "10999:10999"
+  - "12299:12310"
+  - "14001:14001"
+  - "17500:17500"
+  - "20099:20110"
+  - "21999:22010"
+  - "23757:23757"
+  - "24298:24298"
+  - "25299:25310"
+  - "25565:25565"
+  - "25999:26010"
+  - "26001:26011"
+  - "26900:26905"
+  - "27014:27025"
+  - "27215:27215"
+  - "27887:27898"
+  - "27900:27900"
+  - "27959:27970"
+  - "28069:28080"
+  - "28959:28970"
+  - "29069:29080"
+  - "29252:29263"
+  - "29899:29910"
+  - "30719:30730"
+  - "44400:44410"
+  - "58202:58203"
+  - "65117:65117"
