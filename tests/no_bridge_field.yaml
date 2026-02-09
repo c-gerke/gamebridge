@@ -1,0 +1,15 @@
+---
+management:
+  interface: eth0
+  address: 192.168.1.10
+  netmask: 255.255.255.0
+  gateway: 192.168.1.1
+
+trunk_interface: eth1
+
+vlans:
+  - 10
+  - 20
+
+game_ports:
+  - "27015:27015"
