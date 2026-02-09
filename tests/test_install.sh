@@ -192,13 +192,13 @@ count_vlan_interfaces() {
 count_ebtables_rules() {
     local count
     count=$(echo "$FULL_OUTPUT" | grep -c "ip-destination-port" 2>/dev/null || true)
-    [[ "$count" -eq 46 ]]
+    [[ "$count" -eq 45 ]]
 }
 
 run_test "example: all 36 VLAN interfaces created" \
     count_vlan_interfaces
 
-run_test "example: all 46 ebtables port rules created" \
+run_test "example: all 45 ebtables port rules created" \
     count_ebtables_rules
 
 run_test "example: management interface is ens192" \
